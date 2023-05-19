@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 var var1 bool
 
@@ -17,7 +20,12 @@ func main() {
 	var i int
 	var1 = true
 	i = 10
-	j := 10.4
+	j := "ashish"
 	fmt.Println(var1, i)
-	fmt.Printf("Type: %T, Value:%v", j, j)
+	fmt.Printf("Type: %T, Value:%v\n", j, j)
+
+	var x, y int = 3, 4
+	var f float64 = math.Sqrt(float64(x*x + y*y))
+	var z uint = uint(f)
+	fmt.Println(x, y, z)
 }
